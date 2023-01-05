@@ -1,0 +1,1 @@
+pyinstaller -i 'icon.ico' --onefile --noconsole --add-data 'remote.ui;.' --add-data 'icon.ico;.' .\remotegui.py
