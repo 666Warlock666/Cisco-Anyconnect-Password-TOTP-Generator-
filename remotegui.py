@@ -5,10 +5,8 @@ import json
 import os
 import pyotp
 import pyperclip
-import time
+import sys
 
-
-import os, sys
 # Translate asset paths to useable format for PyInstaller
 def resource_path(relative_path):
   if hasattr(sys, '_MEIPASS'):
