@@ -26,7 +26,7 @@ pyinstaller is required to create an executable file (optional)
 
 ## Setup
 In order to be able to use this the user must know there secret code (usually supplied by IT) ie AB1CDEFGPNSTS4L6IJZZWSSXPH
-The user also need to know there global password ie NEC Microsoft password.
+The user also need to know there global password ie Company/Personnel Microsoft password.
 
 When the user first logs on the user is presented to provide an encryption key this just a password or pin that can be used by a user to unlock the encrypted file in future..  Once both passwords match and ok is pressed the used is then pressented to give secret code and global password.
 
