@@ -1,4 +1,4 @@
-#Remote Password+Code Generator
+# Remote Password+Code Generator
 
 When logging on to Cisco AnyConnect (Homeworker-UK) this requires a your global password and Time-based one-time password combined.
 i.e. Pa55W0rd1234567
@@ -7,7 +7,7 @@ This program allows a  user to safely store there password and secret code in a 
 (NOTE:- At no time does this encrypted file get decrypted to be able to view human friendly contents)
 
 
-#Setup
+# Setup
 In order to be able to use this the user must know there secret code (usually supplied by IT) ie AB1CDEFGPNSTS4L6IJZZWSSXPH
 The user also need to know there global password ie NEC Microsoft password.
 
@@ -15,7 +15,7 @@ When the user first logs on the user is presented to provide an encryption key t
 
 this is then saved and encrypted once the user presses ok
 
-#Usage
+# Usage
 
 when the user loads the generator after setting up the user is asked for there encryption password/pin. If the password/pin provided the user can then taken to the main screen.
 
@@ -26,7 +26,7 @@ Change Password  - This allows the user to change the global Password stored in 
 change Encryption Password/pin - This allows the user to change the encription password at any time (Note there is no min length of password required)
 Exit - Exits Remote Password Generator
 
-#Forgot encryption Password
+# Forgot encryption Password
 
 if the user forgets there encryption password there is no recovery option available. Then user can delete the Remote.enc file and setup there secret code & password again
 
