@@ -9,7 +9,7 @@ This program allows a  user to safely store there password and secret code in a 
 ## Python Install
 
 ### Requirements
-- cryptography==38.0.3
+* cryptography==38.0.3
 * pwinput==1.0.2
 * pyotp==2.7.0
 * pyperclip==1.8.2
