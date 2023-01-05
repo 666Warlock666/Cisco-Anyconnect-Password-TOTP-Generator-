@@ -6,6 +6,23 @@ i.e. Pa55W0rd1234567
 This program allows a  user to safely store there password and secret code in a small encrypted file that can be unlocked by a users separate password.
 (NOTE:- At no time does this encrypted file get decrypted to be able to view human friendly contents)
 
+## Python Install
+
+### Requirements
+- cryptography==38.0.3
+* pwinput==1.0.2
+* pyotp==2.7.0
+* pyperclip==1.8.2
+* PyQt5==5.15.7
+* pyinstaller==5.7.0
+
+``` pip install -r requirements.txt ```
+
+pyinstaller is required to create an executable file (optional)
+
+``` pyinstaller -i 'icon.ico' --onefile --noconsole --add-data 'remote.ui;.' --add-data 'icon.ico;.' .\remotegui.py ```
+
+
 
 ## Setup
 In order to be able to use this the user must know there secret code (usually supplied by IT) ie AB1CDEFGPNSTS4L6IJZZWSSXPH
