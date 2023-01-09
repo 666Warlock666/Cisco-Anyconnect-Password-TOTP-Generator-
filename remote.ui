@@ -11,11 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Remote PW Code Gen V1.0</string>
-  </property>
-  <property name="windowIcon">
-   <iconset>
-    <normaloff>Remote password gen/icon.ico</normaloff>Remote password gen/icon.ico</iconset>
+   <string>Remote PW Code Gen V1.1</string>
   </property>
   <widget class="QLabel" name="Lbl_Info">
    <property name="geometry">
@@ -28,7 +24,8 @@
    </property>
    <property name="font">
     <font>
-     <pointsize>14</pointsize>
+     <family>Arial</family>
+     <pointsize>16</pointsize>
     </font>
    </property>
    <property name="text">
@@ -228,6 +225,19 @@
     </property>
     <property name="text">
      <string>Change Encyption PW</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="Chk_ShowPassword">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>150</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Show Password</string>
     </property>
    </widget>
   </widget>

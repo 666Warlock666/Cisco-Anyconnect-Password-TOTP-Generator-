@@ -120,12 +120,21 @@ def ok_enc(): # GUI Button Action
     
     #print(gui.lineEdit_PasswordEnc.text())
     
+def Checkbox_Show(totp_now):
+    if gui.Chk_ShowPassword.isChecked() == True:
+        gui.Lbl_Info.setText(remote_dict.get('password','')+totp_now)
+    else:
+        gui.Lbl_Info.setText('******'+totp_now+ ' - Ready To Paste')
+    
+    
 def code(): # GUI Button Action
     gui.Lbl_Info.setText('Code Generated')
     totp = pyotp.TOTP(remote_dict.get('secret_code',''))
-    print("Current OTP:", totp.now())
-    gui.Lbl_Info.setText('*******'+totp.now()+ ' - Ready To Paste')
-    password = remote_dict.get('password','')+ totp.now()
+    totp_now = totp.now()
+    print("Current OTP:", totp_now)
+    Checkbox_Show(totp_now)  
+    #gui.Lbl_Info.setText('*******'+totp_now+ ' - Ready To Paste')
+    password = remote_dict.get('password','')+ totp_now
     pyperclip.copy(password)
     print('Ready To Paste')
     
