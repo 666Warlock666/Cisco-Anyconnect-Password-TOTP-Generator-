@@ -7,6 +7,8 @@ import pyotp
 import pyperclip
 import sys
 
+title = "Remote PW Code Gen V1.2"
+
 # Translate asset paths to useable format for PyInstaller
 def resource_path(relative_path):
   if hasattr(sys, '_MEIPASS'):
@@ -33,6 +35,7 @@ def GUI_settings(): # Set GUI Display
     gui.Frm_Password.hide()
     gui.Frm_PasswordEnc.hide()
     gui.Frm_Main.hide()
+    gui.setWindowTitle(title)
     if os.path.exists('remote.enc'):
         gui.Frm_PasswordEnc.show()
     else:
