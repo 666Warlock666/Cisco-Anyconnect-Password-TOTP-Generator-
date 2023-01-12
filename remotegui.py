@@ -9,6 +9,16 @@ import sys
 
 title = "Remote PW Code Gen V1.2"
 
+'''
+1.1
+Password Font changed for better OCR Recognition (Mobiles)
+Added option to show password 
+
+1.2
+Added title to main program for easier versioning
+'''
+
+
 # Translate asset paths to useable format for PyInstaller
 def resource_path(relative_path):
   if hasattr(sys, '_MEIPASS'):
